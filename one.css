@@ -1,0 +1,47 @@
+*{
+  box-sizing: content-box;
+}
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+   }
+section {
+    background-color: gainsboro;
+    padding: 20px;
+    margin: 0px 10px 10px 0px  ;
+    position: relative;
+       }
+p.heading {
+    margin: 0px;
+    border: 2px solid black;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-size:x-large;
+    width:100px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+   }
+   div.grid-container{
+    display: grid;
+    grid-template-columns: ;
+
+    
+    
+  }
+  .item{
+    align-items: flex-end;
+  }
+  @media  (min-width: 1200px) {
+
+    div.grid-container {
+      grid-template-columns: 4fr 4fr 4fr;
+    } 
+  }
+@media  (min-width: 767px) and (max-width:1199px) {
+  div.grid-container{
+    
+    grid-template-columns: 6fr 6fr;
+    
+  }
+}
