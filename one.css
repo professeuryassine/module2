@@ -1,47 +1,135 @@
-*{
-  box-sizing: content-box;
+*{ 
+  box-sizing: border-box;
+
 }
 h1{
     text-align: center;
     font-family:'Times New Roman', Times, serif;
+    ;
    }
-section {
+    #sect1 {
     background-color: gainsboro;
-    padding: 20px;
-    margin: 0px 10px 10px 0px  ;
+    padding: 40px;
+    margin: 0px 10px 10px 0px;
+    width: auto;
     position: relative;
-       }
-p.heading {
+    }
+    #sect2{
+      background-color: gainsboro;
+      padding: 40px;
+      margin: 0px 10px 10px 0px;
+      width: auto;
+      position: relative;
+    }
+    #sect3{
+      background-color: gainsboro;
+      padding: 40px;
+      margin: 0px 10px 10px 0px;
+      width: auto;
+      position: relative;
+    }
+ p.text1{
     margin: 0px;
-    border: 2px solid black;
-    padding: 0px 30px 0px 30px;
-    text-align: center;
+    text-align: left;
     font-size:x-large;
-    width:100px;
-    position: absolute;
-    right: 0;
-    top: 0px;
-   }
-   div.grid-container{
-    display: grid;
-    grid-template-columns: ;
-
     
     
-  }
-  .item{
-    align-items: flex-end;
-  }
-  @media  (min-width: 1200px) {
-
-    div.grid-container {
-      grid-template-columns: 4fr 4fr 4fr;
     } 
-  }
-@media  (min-width: 767px) and (max-width:1199px) {
-  div.grid-container{
+    p.text2{
+    margin: 0px;
+    text-align: left;
+    font-size:x-large;
+
+    }
+    p.text3{
+    margin: 0px;
+    text-align: left;
+    font-size:x-large;
+    width: 100%;
+    }
+   p.chicken{
+    border: black solid 2px;
+    background-color: darksalmon;
+    margin: 0px;
+    padding: 5px 40px 5px 40px;
+    font-size: x-large;
+    text-align: center;
+    width: 200px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+   }
+   p.beef{
+    background-color: brown;
+    margin: 0px;
+    padding: 10px;
+    border: black solid 2px;
+    font-size: x-large;
+    text-align: center;
+    width: 200px;
+    padding: 5px 40px 5px 40px;
+    right:0px;
+    top: 0px;
+    position: absolute;
+    }
+    p.sushi{
+    background-color: bisque;
+    margin: 0px;
+    border: black solid 2px;
+    font-size: x-large;
+    text-align: center;
+    width: 200px;
+    padding: 5px 40px 5px 40px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    }
+   div.grid-container{
+      width: 100%;
     
-    grid-template-columns: 6fr 6fr;
+   
+  } 
+  @media  (min-width: 1200px) {
+    #sect1, #sect2, #sect3 {
+      float: left;
+    }
+    #sect1 {
+      width: 33%;
+      height: 270px;
+   
+    }
+    #sect2{
+      width: 33%;
+      height: 270px;
+     
+    }
+    #sect3{
+      width: 31%;
+      height: 270px;
     
-  }
+    }
+
+} 
+@media (min-width: 768px) and (max-width: 1199px){
+  #sect1, #sect2, #sect3 {
+    float: left;
+    }
+    #sect1 {
+      width: 47%;
+      height: auto;
+      margin-left: 10px;
+    }
+    #sect2{
+      width: 47%;
+      height: ;
+      margin-left: 10px;
+    }
+    #sect3{
+      width: auto;
+      height: auto;
+      margin-left: 10px;
+    }
+
+
 }
+
